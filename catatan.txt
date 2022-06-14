@@ -1,0 +1,4 @@
+// src : https://www.youtube.com/watch?v=mbsmsi7l3r4 tysm :D
+1. npm init
+2. npm install express jsonwebtoken dotenv
+3. create .env file to store the secret token

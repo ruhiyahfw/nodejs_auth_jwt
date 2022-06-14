@@ -1,0 +1,29 @@
+// untuk pakai extension rest client
+GET http://localhost:5002/posts
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYXlhIiwiaWF0IjoxNjU1MTg1ODA4LCJleHAiOjE2NTUxODU4Mzh9.MMUouXDyN4giM9PhyOF-9B3SibbO_vNL4a1S8ZqmRxk
+###
+
+###
+POST http://localhost:5003/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYXlhIiwiaWF0IjoxNjU1MTg1NzczfQ.1w4G49X6drkCUZb-lbdh60NedinhTtprBqCGJrEnFvI"
+}
+###
+
+POST http://localhost:5003/login
+Content-Type: application/json
+
+{
+    "username": "aya"
+}
+
+###
+
+DELETE http://localhost:5003/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYXlhIiwiaWF0IjoxNjU1MTg2MDc4fQ.ikH8t7Pa7ZkZDJsCVDXYZYE8M58d7BJpIVgE7idiSE4"
+}
